@@ -1,12 +1,15 @@
 p{
-    color: blue;
-    background-color: yellow;
-    font-family: monospace;
-    text-align: right;
-    line-height: 3px;
-    letter-spacing: 3px;
-    word-spacing: 5px;
-    text-indent: 30px;
+    
+    padding: 0 45px;
+    text-indent: 15px;
+}
+figcaption {
+    margin-top: 10px;
+}
+
+figure {
+    padding: 15px;
+    margin: 30px;
 }
 
 h1 {
@@ -14,6 +17,7 @@ h1 {
     text-align: center;
     letter-spacing: 3px;
     word-spacing: 10px;
+    padding: 10px;
    
     
 }
@@ -22,6 +26,8 @@ h2 {
     font-family: sans-serif;
     text-align: center;
     letter-spacing: 3px;
+    margin-top: 30px;
+
 }
 
 body{
@@ -29,6 +35,9 @@ body{
     border-color: red;
     border-style: solid;
     border-width: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
 
     /* deixando o fundo ridículo */
 
