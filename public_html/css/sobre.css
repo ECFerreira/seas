@@ -39,7 +39,35 @@ figcaption {
     margin-top: 10px;
 }
 
+#centro-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
 p {
     padding: 0 45px;
     text-indent: 15px;
+}
+
+#cabecalho {
+    color: white;
+    text-align: center;
+}
+
+#rodape img{
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+#rodape {
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
 }
