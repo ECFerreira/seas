@@ -1,21 +1,101 @@
+body {
+    color: #333333;
+    font-family: "Lucinda Sans Unicode", "Lucinda Grande", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
 .sacola {
     background: url(../img/sacola.png) no-repeat top right;
-
+    padding-top: 8px;   
     font-size: 14px;
-    padding-right: 35px;
     text-align: right;
     width: 140px;
-}
+    padding-right: 35px; 
+
+    
+/*posiciona a sacola na direita*/
+    position: absolute;
+    padding-top: 8px;
+    top: 0;
+    right: 0;
+} 
+
 
 .menu-opcoes ul{
+    display: inline;
     font-size: 15px;
-}
+   /*position: absolute;*/
+    bottom: 0;
+    right: 0;
+} 
+
+
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+   /* position: absolute;*/
+        
+    bottom: 0;
+    right: 0; 
+} 
+
+
 
 .menu-opcoes a {
     color: #003366;
 }
 
-body {
-    color: #333333;
-    font-family: "Lucinda Sans Unicode", "Lucinda Grande", sans-serif;
+
+  
+
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.logotipo {
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+/* .quadrado {
+    background: green;
+    height: 200px;
+    width: 200px;
+} */
+
+.absoluto {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.relativo {
+    position: relative;
+
+}
+
+header {
+    position: relative;
+}
+
+.busca,
+.menu-departamentos{
+    float: left;
+}
+
+.menu-departamentos {
+    clear: left;
+
 }
