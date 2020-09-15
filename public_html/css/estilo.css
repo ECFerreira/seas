@@ -90,12 +90,174 @@ header {
     position: relative;
 }
 
+
+/* Formulários a partir do 4.2
+2. Aplique o estilo visual do design com CSS. Queremos um fundo cinza nas caixas de busca e no menu
+de departamentos. Além disso, o texto deve estar em negrito e apresentado em maiúsculas.
+Aplicaremos também algumas regras de tamanhos e margens.
+*/
+
 .busca,
-.menu-departamentos{
+.menu-departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-right: 10px;
+    width: 230px;
+
     float: left;
+    clear: left;
 }
 
-.menu-departamentos {
-    clear: left;
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
 
+.menu-departamentos li{
+    background-color:  white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a{
+    color: #333333;
+    text-decoration: none;
+}
+
+/* 3. Na busca, use a propriedade vertical-align para alinhar o campo de texto à imagem da lupa pelo
+centro. Aproveite e coloque o tamanho do campo de texto para melhor encaixar no design e use
+seletores de atributo do CSS para isso (veremos mais desses seletores depois no curso).*/
+
+.busca input {
+    vertical-align: middle;
+}
+
+.busca input[type=search] {
+    width: 170px;
+}
+
+.destaque {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.painel li{
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
+/* 
+Vamos posicionar nossos painéis para ficarem de acordo com o design.
+O painel de novidades deve flutuar à esquerda e o mais-vendidos , à direita. Cada um deve
+ocupar 445px (pouco menos da metade dos 940px), assim um ficará ao lado do outro:
+*/
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+}
+
+.novidades {
+    float: left;
+    background-color: #f5dcdc;
+    
+}
+
+.mais-vendidos {
+    float: right;
+    background-color: #dcdcf5;
+}
+
+/*
+Próximo passo: os itens dos produtos dentro da lista de cada painel. Queremos que sejam dispostos
+lado a lado mas com certo tamanho e espaçamento para alinhamento. Conseguimos isso colocando
+display:inline-block nos elementos da lista e, para alinhar os produtos pelo topo, com
+vertical-align:top.
+*/
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
+/*
+O posicionamento em si deve estar certo. Mas falta umas regras para estilo, como tamanho dos
+títulos e cores de texto e fundo.
+*/
+
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*Estilização*/
+
+footer  {
+    background-image: url(../img/fundo-rodape.png);
+    
+    clear: both;
+    padding: 20px 0;
+    
+} 
+
+footer .container {
+    position: relative;
+    
+} 
+
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social a {
+    /*tamanho da imagem */
+    height: 32px;
+    width: 32px;
+
+    /* imagem replacement */
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+} 
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
+}
+
+
+.social li {
+    float: left;
+   margin-left: 25px;
+   margin-right: 10px;
 }

@@ -40,16 +40,208 @@
                    
         </header>
 
-        <div class="quadrado"></div>
+       <!-- <div class="quadrado"></div>
     
         <div class="quadrado relativo">
             <div class="quadrado absoluto"></div>
+        </div> -->
+
+        <!-- 4.7 Exercícios: Menu e destaque
+        1. Vamos criar um elemento destaque e, dentro dele, uma section para busca e outra para o menu:-->
+
+        <div class="container destaque">
+
+            <section class="busca">
+                <h2>Busca</h2>
+
+                <form>
+                    <input type="search">
+                    <input type="image" src="img/busca.png">
+                </form>
+            
+            </section><!--fim .busca-->
+
+            <section class="menu-departamentos">
+                <h2>Departamentos</h2>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Blusas e Camisas</a></li>
+                        <li><a href="#">Calças</a></li>
+                        <li><a href="#">Saias</a></li>
+                        <li><a href="#">Vestidos</a></li>
+                        <li><a href="#">Sapatos</a></li>
+                        <li><a href="#">Bolsas e Carteiras</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                    </ul>
+                </nav>
+            </section><!-- fim .menu-departamentos -->
+
+            <img src="img/destaque-home.png" alt="Promoção: Big City Night">
+        </div> <!-- fim .container .destaque -->
+            <!--Repare como já usamos diversas classes no HTML para depois selecionarmos os elementos via CSS.-->
+
+<!--
+4.9 EXERCÍCIOS: PAINÉIS FLUTUANTES
+    1. Vamos criar agora nosso painel de novidades. Crie um elemento <div> para conter os dois painéis
+de produtos. Ele deve receber a classe container, para se alinhar ao meio da tela, e a classe paineis
+que usaremos depois no CSS.
+-->
+
+    <div class="container paineis">
+        <!-- os paineis de novidades e mais vendidos entrarão aqui dentro -->
+        <section class="painel novidades">
+            <h2>novidades</h2>
+            <ol>
+                <!-- primeiro produto -->
+                <li> <a href="produto.html">
+                    <figure>
+                        <img src="img/produtos/miniatura1.png">
+                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                </a>
+            </li>
+
+            <!-- segundo produto -->
+
+            <li> <a href="produto.html">
+                <figure>
+                    <img src="img/produtos/miniatura2.png">
+                    <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                </figure>
+            </a>
+        </li>
+
+        <!-- terceiro produto -->
+
+        <li> <a href="produto.html">
+            <figure>
+                <img src="img/produtos/miniatura3.png">
+                <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+            </figure>
+        </a>
+        </li>
+
+        <!-- quarto produto -->
+
+        <li> <a href="produto.html">
+            <figure>
+                <img src="img/produtos/miniatura4.png">
+                <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+            </figure>
+        </a>
+        </li>
+
+        <!-- quinto produto -->
+
+        <li> <a href="produto.html">
+            <figure>
+                <img src="img/produtos/miniatura5.png">
+                <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+            </figure>
+        </a>
+        </li>
+
+        <!-- sexto produto -->
+
+        <li> <a href="produto.html">
+            <figure>
+                <img src="img/produtos/miniatura6.png">
+                <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+            </figure>
+        </a>
+        </li>
+
+            </ol>
+        </section>
+
+<!--Crie um segundo painel, para representar os produtos mais vendidos. Esse painel deve ficar após o
+fechamento do painel anterior, mas ainda dentro da div paineis .-->
+
+        <section class="painel mais-vendidos">
+            <h2>Mais Vendidos</h2>
+            <ol>
+                <!-- primeiro mais vendidos -->
+
+                <li><a href="mais-vendidos.html">
+                    <figure>
+                        <img src="img/produtos/miniatura7.png">
+                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                    </a>
+                </li>
+
+                 <!-- segundo mais vendidos -->
+
+                 <li><a href="mais-vendidos.html">
+                    <figure>
+                        <img src="img/produtos/miniatura8.png">
+                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                    </a>
+                </li>
+
+                 <!-- terceiro mais vendidos -->
+
+                 <li><a href="mais-vendidos.html">
+                    <figure>
+                        <img src="img/produtos/miniatura9.png">
+                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                    </a>
+                </li>
+
+                <!-- quarto mais vendidos -->
+
+                <li><a href="mais-vendidos.html">
+                    <figure>
+                        <img src="img/produtos/miniatura10.png">
+                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                    </a>
+                </li>
+
+                <!-- quinto mais vendidos -->
+
+                <li><a href="mais-vendidos.html">
+                    <figure>
+                        <img src="img/produtos/miniatura11.png">
+                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                    </a>
+                </li>
+
+                <!-- sexto mais vendidos -->
+
+                <li><a href="mais-vendidos.html">
+                    <figure>
+                        <img src="img/produtos/miniatura12.png">
+                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                    </a>
+                </li>
+
+            </ol>
+        </section>
+
+    </div>
+    
+    <!--Rodape-->
+
+    <footer>
+
+        <div class="container">
+            <img src="img/logo-rodape.png" alt="Logo Mirror Fashion">
+    
+
+            <ul class="social">
+                <li><a href="http://facebook.com/mirrorfashion">facebook</a></li>
+                <li><a href="http://twitter.com/mirrorfashion">r</a></li>
+                <li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+            </ul>
+
         </div>
 
-    <form>
-        <input type="search">
-        <input type="image" src="img/busca.png" class="lupa">
-    </form>
-
+    </footer>
      </body>
 </html>
