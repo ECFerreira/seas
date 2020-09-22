@@ -17,7 +17,8 @@ h1 {
     text-align: center;
     letter-spacing: 3px;
     word-spacing: 10px;
-    padding: 10px;
+   /* padding: 10px; */
+    padding-left: 40px;
    
     
 }
@@ -45,5 +46,10 @@ body{
 
 }
 
+
+#pai {
+    color: blue;
+padding-left: 0;
+}
 
 
