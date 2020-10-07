@@ -190,9 +190,10 @@ seletores de atributo do CSS para isso (veremos mais desses seletores depois no 
     width: 140px;
     margin: 2px;
     padding-bottom: 10px;
+   
 }
 
-.painel li:nth-child(2n):hover {
+.painel li:hover {
     background-color: rgb(255, 255, 255, 0.8);
     box-shadow: 0 0 5px #333;
     transition: box-shadow 0.7s;
