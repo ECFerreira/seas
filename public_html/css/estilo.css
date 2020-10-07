@@ -192,9 +192,11 @@ seletores de atributo do CSS para isso (veremos mais desses seletores depois no 
     padding-bottom: 10px;
 }
 
-.painel li:hover {
+.painel li:nth-child(2n):hover {
+    background-color: rgb(255, 255, 255, 0.8);
     box-shadow: 0 0 5px #333;
     transition: box-shadow 0.7s;
+    transform: scale(1.2) rotate(-5deg);
 }
 /* 
 Vamos posicionar nossos painéis para ficarem de acordo com o design.
