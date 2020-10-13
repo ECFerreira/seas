@@ -2,6 +2,8 @@ p{
     
     padding: 0 45px;
     text-indent: 15px;
+    color: navy;
+    font-size: 16px;
 }
 figcaption {
     margin-top: 10px;
@@ -73,6 +75,8 @@ padding-left: 0;
 
 p {
     text-shadow: 10px 10px 5px red;
+    
+    
 }
 
 #teste {
@@ -86,3 +90,8 @@ figure:hover {
 
 .menu-departamentos a:hover {
     color: #007dc6;
+
+p {
+    font-size: 16px;
+}
+
