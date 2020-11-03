@@ -3,7 +3,10 @@ body {
     font-family: "Lucinda Sans Unicode", "Lucinda Grande", sans-serif;
     margin-left: auto;
     margin-right: auto;
-    width: 940px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .sacola {
@@ -190,10 +193,8 @@ seletores de atributo do CSS para isso (veremos mais desses seletores depois no 
     width: 140px;
     margin: 2px;
     padding-bottom: 10px;
-
     transition: 0.7s ease-out;
-   
-}
+   }
 
 .painel li:hover {
     background-color: rgb(255, 255, 255, 0.8);
